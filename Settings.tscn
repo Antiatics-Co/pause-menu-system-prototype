@@ -1,0 +1,58 @@
+[gd_scene load_steps=2 format=3 uid="uid://d18xksanxnnhg"]
+
+[ext_resource type="Script" uid="uid://dxaiugmkuvi5h" path="res://Settings.cs" id="1_bvb5x"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bvb5x")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Volume" type="Node" parent="Panel"]
+
+[node name="VolumeLabel" type="Label" parent="Panel/Volume"]
+unique_name_in_owner = true
+offset_left = 68.0
+offset_top = 59.0
+offset_right = 401.0
+offset_bottom = 98.0
+size_flags_vertical = 6
+text = "Master Volume"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VolumeSlider" type="HSlider" parent="Panel/Volume"]
+unique_name_in_owner = true
+offset_left = 68.0
+offset_top = 60.0
+offset_right = 401.0
+offset_bottom = 152.0
+size_flags_vertical = 2
+
+[node name="BackButton" type="Button" parent="Panel"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -191.0
+offset_top = -93.0
+offset_right = 192.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 24
+text = "Back
+"

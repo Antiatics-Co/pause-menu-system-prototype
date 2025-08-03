@@ -1,0 +1,66 @@
+[gd_scene load_steps=3 format=3 uid="uid://bsttdn8tx1x5q"]
+
+[ext_resource type="Script" uid="uid://uy4sdxwgq3xw" path="res://PauseMenu.cs" id="1_etnfi"]
+[ext_resource type="Texture2D" uid="uid://4gr7p25rfdwl" path="res://icon.svg" id="1_nov15"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_etnfi")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -141.0
+offset_top = -55.0
+offset_right = 167.0
+offset_bottom = 147.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Resume" type="Button" parent="Panel/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+text = "Resume"
+
+[node name="Settings" type="Button" parent="Panel/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+text = "Settings"
+
+[node name="Exit" type="Button" parent="Panel/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+text = "Save and Exit"
+
+[node name="TextureRect" type="TextureRect" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -573.0
+offset_right = 572.0
+offset_bottom = 261.0
+grow_horizontal = 2
+texture = ExtResource("1_nov15")
+expand_mode = 3
+stretch_mode = 5
